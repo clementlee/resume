@@ -1,125 +1,115 @@
 \documentclass[11pt]{article}
-%\usepackage{cmbright}
-%\usepackage[default]{sourcesanspro}
-\usepackage[default,osfigures,scale=0.95]{opensans}
-%\usepackage[defaultsans]{droidsans}
-\renewcommand*\familydefault{\sfdefault}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont[
+            Extension=.ttf,
+            UprightFont=NotoSans-Regular,
+            BoldFont=NotoSans-Bold,
+            ItalicFont=NotoSans-Italic,
+            Ligatures=TeX
+            ]{notosans}
 \usepackage{multicol}
-\usepackage[T1]{fontenc}
-\usepackage[letterpaper, vmargin=0.5in, hmargin=0.75in]{geometry}
-\usepackage{textcomp}
-\usepackage[md]{titlesec}
 \usepackage{enumitem}
+\usepackage[compact]{titlesec}
 \usepackage{microtype}
-\pagestyle{empty}
-\setlist[itemize]{leftmargin=*}
+
+\titlespacing*{\section}{0pt}{1.5\baselineskip}{0.5\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0pt}
+\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
+\titleformat{\subsubsection}
+       {\normalfont\itshape}
+       {\thesubsection}{1em}{}
+
+\setlength\parindent{0pt}
+
+\author{Clement Lee}
+\title{Resume}
 \begin{document}
-\begin{center}
+\pagenumbering{gobble}
 
-\vspace{-5em}
-{\LARGE {\textbf{Clement Lee}}}
+{\huge\textbf{CLEMENT LEE}}
+\vspace{0.25\baselineskip}
 
-\begin{multicols}{3}
-\begin{flushright}
-\emph{Campus Address}\\
-1932 Frist Center\\
-Princeton, NJ 08544
-\end{flushright}
-clem@princeton.edu\\
-(801) 289-6300\\
+clem@princeton.edu
+
+(801) 289-6300
+
 clementl.com
-\begin{flushleft}
-\emph{Permanent Address}\\
-566 Cambridge Circle\\
-Salt Lake City, UT 84103
-\end{flushleft}
+
+\vspace{\baselineskip}
+\begin{multicols}{2}
+%********************EDUCATION********************
+\section*{EDUCATION}
+\subsection*{Princeton University\hfill\textnormal{2013---2017}}
+\subsubsection*{Computer Science, B.S.E.\hfill\textnormal{3.75 GPA}\\
+Certificate in Applied Mathematics}
+
+Relevant coursework includes:
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item COS217 Programming Systems
+\item COS226 Data Structures and Algorithms
+\item COS445 Game Theory
+\end{itemize}
+
+\subsection*{University of Utah\hfill\textnormal{2009---2013}}
+\subsubsection*{Computer Science/Mathematics\hfill\textnormal{3.84 GPA}}
+Took mathematics and computer science courses since freshman year of high school due to having exhausted available options.
+
+\subsection*{West High School\hfill\textnormal{2009---2013}}
+\subsubsection*{Honors and IB Diploma\hfill\textnormal{4.43 GPA}}
+\vspace{1.5\baselineskip}
+
+%********************EXPERIENCE********************
+\section*{EXPERIENCE}
+\subsection*{R\&D Software Intern\hfill\textnormal{06/14---08/14}}
+\subsubsection*{Bloomberg L.P.}
+Developed natural language processing algorithms to automate live text analysis and question answering in C++ and Python.
+
+\subsection*{Full-Stack Developer\hfill\textnormal{01/14---present}}
+\subsubsection*{Princeton MUN Conference}
+Designing a new registration and live administration system to assist in conference organization using PHP.
+
+\subsection*{IT Chair\hfill\textnormal{12/13---present}}
+\subsubsection*{Princeton Student Government}
+Managing servers and developing student apps for the entirety of the Princeton student body in tandem with school administrators.
+
+\subsection*{Lead Backend Developer\hfill\textnormal{01/14---05/14}}
+\subsubsection*{Read Record Replay}
+Developed the server, of a new website with Node.js for an educational nonprofit teaching English to young children using audiobooks.
+
+%********************PROJECTS********************
+\section*{PROJECTS}
+\vspace{-0.5\baselineskip}
+\subsubsection*{See github.com/clementlee.}
+
+\vspace{\baselineskip}
+\subsection*{WhenIsBad}
+i don't have projects...
+
+\subsection*{WhenIsBad}
+i don't have projects...
+
+\subsection*{WhenIsBad}
+i don't have projects...
+
+\subsection*{WhenIsBad}
+i don't have projects...
+
+%********************SKILLS********************
+\section*{SKILLS}
+
+\subsection*{Programming}
+Familiar with many languages, which include C/C{}\verb!++!, Java/C\#, Python, and HTML/CSS/JS.
+
+Also very quick at picking up new technology.
+
+\subsection*{Mathematics}
+Experience in topology, partial differential equations, abstract algebra, and more.
+
+\subsection*{Miscellaneous Interests}
+LaTeX, graphic design, and video editing.
+
 \end{multicols}
-\end{center}
 
-\hrule
-\vspace{-1em}
-\subsection*{\textbf{Education}}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\itemsep0.33em
 
-\item \textbf{Princeton University} \emph{Sep 2013 to Jun 2017}\hfill \emph{3.75 GPA}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item B.S.E. candidate in Computer Science
-\item \emph{Relevant Coursework:}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item {COS217:} Programming Systems---low-level computer design using C and x86 assembly
-\item {COS445:} Networks, Economics, and Computing---game theoretical computation, market optimization
-\end{itemize}
-\end{itemize}
-
-\item \textbf{University of Utah} \emph{Aug 2009 to Jan 2013}\hfill \emph{3.84 GPA}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item Cross-enrolled during during high school, 48 credits (sophomore status)
-\item Near-completion of a math major and a CS minor, completion of graduate-level math classes
-\end{itemize}
-
-\item \textbf{West High School} \emph{Aug 2009 to Jun 2013}\hfill \emph{4.43 GPA}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item Full honors, IB diploma
-\end{itemize}
-\end{itemize}
-\vspace{0.4em}
-\hrule
-\vspace{-1em}
-\subsection*{\textbf{Experience}}
-
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\itemsep0.33em
-\item \textbf{R\&D Intern}  \hfill \emph{Jun 2014 to Aug 2014}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item \emph{Bloomberg LP} 
-\item Exploring and developing natural language processing algorithms to automate live text analysis.
-\end{itemize}
-
-\item \textbf{Web Designer and Backend Developer} \hfill\emph{Jan 2014 to present}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item \emph{Princeton Model United Nations}  
-\item Designing a new registration and live administration system to assist in conference organization using PHP.
-\end{itemize}
-
-\item \textbf{IT Chair}  \hfill \emph{Dec 2013 to present}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item \emph{Princeton Undergraduate Student Government} 
-\item Managing IT and developing student-facing apps for the Princeton student body using a variety of web technologies.
-\end{itemize}
-
-\item \textbf{Lead Backend Developer}  \hfill\emph{Jan 2014 to May 2014}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item \emph{Read Record Replay}
-\item Developing the server, managing the databases, and integrating the design of a new website with NodeJS for an educational nonprofit dedicated to teaching English to young children using audiobooks.
-\end{itemize}
-
-\item \textbf{Webmaster and Web Designer}\hfill \emph{Dec 2014 to present}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item \emph{Princeton CSA}, \emph{Princeton TASA}, and \emph{VTone}
-\item Maintaining and redesigning the websites of multiple student organizations to help promote events.
-\end{itemize}
-
-\item \textbf{Researcher and Programmer} \hfill\emph{May 2012 to April 2013}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item \emph{University of Utah Visual Perception and Spatial Cognition Lab}
-\item Developed realistic environments in Python to visualize in head-mounted displays to test the effect of movement on distance and spatial judgment.\end{itemize}
-
-\item \textbf{Personal Projects}
-
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\item Developed a gesture recognition framework using convolutional neural networks to analyze motion features integrated over time in C++, and a game theory simulation studying the environmental factors behind cooperation in Python using multiprocessing. 
-\end{itemize}
-\end{itemize}
-\vspace{0.4em}
-\hrule
-\vspace{-1em}
-\subsection*{\textbf{Skills}}
-\begin{itemize}[nolistsep,topsep=0pt, label=]
-\itemsep0.33em
-\item \textbf{Programming:} fluent in Java/C\#, Python, C/C{}\verb!++!, HTML/CSS/Javascript, and x86 assembly
-\item \textbf{Mathematics:} multivariable calculus, partial differential equations,  and abstract algebra
-\end{itemize}
-%\vspace{0.4em}
-%\hrule
 \end{document}
