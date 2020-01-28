@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
-\usepackage[margin=0.95in]{geometry}
+\usepackage[margin=1in]{geometry}
+%\usepackage{ebgaramond}
 \usepackage{fontspec}
 \setmainfont[
 Extension=.ttf,
@@ -8,112 +9,135 @@ BoldFont=NotoSans-Bold,
 ItalicFont=NotoSans-Italic,
 Ligatures=TeX
 ]{notosans}
-\usepackage{multicol}
+
+\usepackage{parskip}
+\usepackage{lipsum}
 \usepackage{enumitem}
-\usepackage[compact]{titlesec}
 \usepackage{microtype}
 
-\titlespacing*{\section}{0pt}{1.5\baselineskip}{0.5\baselineskip}
-\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0pt}
-\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
-\titleformat{\subsubsection}
-{\normalfont\itshape}
-{\thesubsection}{1em}{}
+\setlist{nosep}
 
-\setlength\parindent{0pt}
-\setlength\columnsep{24pt}
 
-\author{Clement Lee}
-\title{Resume}
-\begin{document}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0\baselineskip}{0.5\baselineskip}
+\titlespacing*{\subsection}{0pt}{0\baselineskip}{0.25\baselineskip}
+
+%\newcommand{\smallskip}{\vspace{0.25\baselineskip}}
+
 \pagenumbering{gobble}
-\vspace*{1.5em}
 
-{\huge\textbf{CLEMENT LEE}}
-\vspace{0.25\baselineskip}
+\title{Clement Lee's Resume}
+\author{Clement Lee}
+\date{}
+\begin{document}
+{\Huge\textbf{CLEMENT LEE}}
+\smallskip\\
+clementlee0@gmail.com\\
+(801) 289-6300\\
 
-clem@princeton.edu
+\begin{minipage}[t]{0.40\textwidth}
+  \section*{\LARGE EDUCATION}
+  \subsection*{Princeton University}
+  \emph{Computer Science, B.S.E}\hfill 2013--2017
+  
+  \hfill 3.67 GPA
+  \smallskip
 
-(801) 289-6300
+  Graduated \emph{cum laude} and performed four semesters of independent research.
 
-\vspace{\baselineskip}
-\begin{multicols}{2}
-  %********************EDUCATION********************
-  \section*{EDUCATION}
-  \subsection*{Princeton University\hfill\textnormal{2013---2017}}
-  \subsubsection*{Computer Science, B.S.E.\hfill\textnormal{3.67 GPA}\\
-    Certificate in Applied Mathematics}
-
-  Relevant coursework includes:
-  \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-    \item COS333 Advanced Programming
-    \item COS445 Game Theory
-    \item COS432 Information Security
+  Coursework included:
+  \begin{itemize}
+    \item Distributed Systems
+    \item Artificial Intelligence
+    \item Information Security
   \end{itemize}
 
-  \subsection*{University of Utah\hfill\textnormal{2009---2013}}
-  \subsubsection*{Computer Science/Mathematics\hfill\textnormal{3.84 GPA}}
-  \vspace{\baselineskip}
+  \medskip
+  \subsection*{New York University}
+  \emph{Mathematics, Non-Degree}\hfill2019---
 
-  %********************EXPERIENCE********************
-  \section*{EXPERIENCE}
-  \subsection*{Software Intern\hfill\textnormal{06/16---08/16}}
-  \subsubsection*{Two Sigma}
-  Developing financial software to improve modeller productivity.
+  \hfill 3.67 GPA
+  \smallskip
+  
+  Continuing education at the master's level in the Courant Institute of Mathematical Sciences. 
 
-  \subsection*{Foundry Intern\hfill\textnormal{06/15---08/15}}
-  \subsubsection*{Microsoft}
-  Full-stack development on a variety of technologies.
-
-  \subsection*{R\&D Software Intern\hfill\textnormal{06/14---08/14}}
-  \subsubsection*{Bloomberg L.P.}
-  Developed natural language processing algorithms to automate live text analysis and question answering in C++ and Python.
-
-  \subsection*{Lab TA\hfill\textnormal{01/15---05/16}}
-  \subsubsection*{Princeton University Computer Science Dept.}
-  Tutoring and aiding computer science students in completing assignments and understanding fundamental concepts.
-
-  \subsection*{Web Editor\hfill\textnormal{02/15---present}}
-  \subsubsection*{Daily Princetonian}
-  Maintaining and developing the website of Princeton's largest student publication.
-
-  \subsection*{Full-Stack Developer\hfill\textnormal{01/14---12/14}}
-  \subsubsection*{Princeton MUN Conference}
-  Designed a new registration and live administration system to assist in conference organization using PHP.
-
-  \subsection*{IT Chair\hfill\textnormal{12/13---01/15}}
-  \subsubsection*{Princeton Student Government}
-  Maintained servers and developed student apps for the entirety of the Princeton student body in tandem with school administrators.
-
-  \subsection*{Backend Developer\hfill\textnormal{01/14---05/14}}
-  \subsubsection*{Read Record Replay}
-  Developed the server of a new website with Node.js for an educational nonprofit teaching English to young children using audiobooks.
-
-  %********************PROJECTS********************
-  \section*{PROJECTS}
-  \vspace{-0.5\baselineskip}
-  \subsubsection*{See github.com/clementlee.}
-
-  \vspace{2\baselineskip}
-  %\subsection*{WhenIsBad}
-  %i don't have projects...
-
-
-  %********************SKILLS********************
-  \section*{SKILLS}
+  \bigskip
+  \section*{\LARGE SKILLS}
 
   \subsection*{Programming}
-  Familiar with a variety of different languages, which include C/C{}\verb!++!, Java/C\#, Python, and HTML/CSS/JS.
+  Fluent in Java and Python.
+  Have also worked with web technologies (HTML/JS/CSS), and some other languages such as Groovy.
 
-  Adept at picking up new technology.
+  \medskip
+  \subsection*{Data Analytics}
+  Experience in Pandas and Spark.
+  Interested in high-performance analytics on datasets of all sizes.
 
-  \subsection*{Mathematics}
-  Experience in topology, partial differential equations, abstract algebra, and more.
+  \medskip
+  \subsection*{ETL/Data Pipelines}
+  Have worked extensively on maintaining an ETL-style framework for large-scale data.
 
-  \subsection*{Miscellaneous Interests}
-  Photography, graphic design, and film.
+  \medskip
+  \subsection*{Deep Learning}
+  Prior experience with deep learning research.
+  Have worked with Tensorflow and Torch.
 
-\end{multicols}
 
+\end{minipage}\hspace{0.04\textwidth}
+\begin{minipage}[t]{0.55\textwidth}
+  \section*{\LARGE EXPERIENCE}
 
+  \subsection*{Software Developer}
+  \emph{Two Sigma Securities}\hfill08/17---
+  \smallskip
+
+  \begin{itemize}
+  \item Producing tooling to accelerate data analysis and research processes derived from market data and trading events
+  \item Building new components of a high performance trading system
+  \item Creating dashboards and monitoring of financial data.
+  \end{itemize}
+
+  \medskip
+  \subsection*{Software Intern}
+  \emph{Two Sigma}\hfill 06/16--08/16
+  \smallskip
+
+  Developed financial software to aid modeller productivity.
+  Produced web interface to access data.
+
+  \medskip
+  \subsection*{Foundry Intern}
+  \emph{Microsoft}\hfill 06/15--08/15
+  \smallskip
+
+  Full-stack development on a variety of technologies and interfacing with Microsoft APIs.
+
+  \medskip
+  \subsection*{R\&D Software Intern}
+  \emph{Bloomberg}\hfill 06/14--08/14
+  \smallskip
+
+  Developed natural language processing algorithms to automate live text analysis and question answering in C++ and Python.
+
+  \bigskip
+  \section*{\LARGE PROJECTS}
+  \emph{see github.com/clementlee for more details.}
+  
+  \medskip
+  \subsection*{Self-Optimizing Networks}
+  \emph{Senior Thesis, Princeton}
+  \smallskip
+
+  Researched dynamically-sized deep neural networks to optimize learning capacity against overfitting.
+
+  \medskip
+  \subsection*{Machine Learning Seminar}
+  \emph{Junior Independent Work}
+  \smallskip
+
+  Examined different techniques of pruning large-scale neural networks without sacrificing accuracy.
+  
+
+  
+\end{minipage}
 \end{document}
