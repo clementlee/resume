@@ -2,142 +2,104 @@
 \usepackage[margin=1in]{geometry}
 %\usepackage{ebgaramond}
 \usepackage{fontspec}
-\setmainfont[
-Extension=.ttf,
-UprightFont=NotoSans-Regular,
-BoldFont=NotoSans-Bold,
-ItalicFont=NotoSans-Italic,
-Ligatures=TeX
-]{notosans}
-
 \usepackage{parskip}
 \usepackage{lipsum}
 \usepackage{enumitem}
+\usepackage{titlesec}
 \usepackage{microtype}
 
 \setlist{nosep}
 
 
-\usepackage{titlesec}
-\titlespacing*{\section}{0pt}{0\baselineskip}{0.5\baselineskip}
-\titlespacing*{\subsection}{0pt}{0\baselineskip}{0.25\baselineskip}
+\titlespacing*{\section}{0pt}{0.5\baselineskip}{0.3\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0.3\baselineskip}
+\titleformat{\subsection}[runin]{\bfseries}{}{}{}[]
 
-%\newcommand{\smallskip}{\vspace{0.25\baselineskip}}
 
 \pagenumbering{gobble}
 
-\title{Clement Lee's Resume}
-\author{Clement Lee}
+\title{\vspace{-2\baselineskip}Clement Lee\vspace{-\baselineskip}}
+\author{clementlee0@gmail.com\\(801) 289-6300}
 \date{}
 \begin{document}
-{\Huge\textbf{CLEMENT LEE}}
-\smallskip\\
-clementlee0@gmail.com\\
-(801) 289-6300\\
+\maketitle
 
-\begin{minipage}[t]{0.40\textwidth}
-  \section*{\LARGE EDUCATION}
+\vspace{-2\baselineskip}
+
+
+\section*{\sc Education}
+\hrule
   \subsection*{Princeton University}
-  \emph{Computer Science, B.S.E}\hfill 2013--2017
-  
-  \hfill 3.67 GPA
-  \smallskip
+  \emph{B.S.E. Computer Science,} 3.67 GPA\hfill 2013--2017
 
   Graduated \emph{cum laude} and performed two years of independent research.
+  Coursework included Distributed Systems and Artificial Intelligence.
+  
+  \subsection*{New York University}
+  \emph{M.S. Mathematics,} 3.82 GPA \hfill2020---
+   
+  Studying applied mathematics.
+  Anticipated completion in Dec 2021.
 
-  Coursework included:
+\section*{\sc Experience}
+\hrule
+  \subsection*{Algo Engineer}
+  \emph{Hudson River Trading}\hfill09/21
+
+  \emph{Pending start.}
+  
+  \subsection*{Software Developer}
+  \emph{Two Sigma}\hfill08/17--09/20
+
+  \emph{On garden leave since 09/20.}
   \begin{itemize}
-    \item Distributed Systems
-    \item Artificial Intelligence
+    \item Rebuilt key research infrastructure with focus on reliability and performance.
+    \item Built a new data framework and monitoring platform to process market data.
+    \item Developed a Kafka-based pipeline for processing and distributing trading events.
   \end{itemize}
 
-  \medskip
-  \subsection*{New York University}
-  \emph{Mathematics, M.S.}\hfill2019---
+  \subsection*{Software Intern}
+  \emph{Two Sigma}\hfill 06/16--08/16
 
-  \hfill 3.82 GPA
-  \smallskip
+  Developed financial software to improve modeller productivity.
+
+  \subsection*{Foundry Intern}
+  \emph{Microsoft}\hfill 06/15--08/15
+
+  Full-stack development on a variety of technologies and interfacing with Microsoft APIs.
+
+\section*{\sc Projects}
+\hrule
+  \emph{See github.com/clementlee for more details and personal projects.}
+
+  \subsection*{Long-duration ODE Solvers}
+  \hfill\emph{Masters Thesis, NYU}
+
+  Ongoing work in long-term dynamics of differential equation solvers.
   
-  Continuing education at the Courant Institute of Mathematical Sciences. 
-  Anticipated graduation in Dec 2021.
+  \subsection*{Self-Optimizing Networks}
+  \hfill\emph{Senior Thesis, Princeton}
 
-  \bigskip
-  \section*{\LARGE SKILLS}
+  Researched sizing algorithms to optimize learning capacity against overfitting in deep networks.
+
+
+\section*{\sc Skills}
+\hrule
 
   \subsection*{Programming}
-  Fluent in Java and Python, .
-  Frequent usage of common tools like Git and Bash/UNIX shells.
 
-  \medskip
+  Fluent in Java and Python, as well as common tools like Git and Bash/UNIX.
+  Interested in Rust and Julia.
+
   \subsection*{Data Science}
+
   Experience in Pandas and Spark, and supporting Jupyter usecases.
   Interested in high-performance analytics on datasets of all sizes.
 
-  \medskip
-  \subsection*{ETL/Data Pipelines}
-  Built and maintained an ETL framework for large-scale data.
-
-  \medskip
   \subsection*{Machine Learning}
+
   Prior deep learning research using Tensorflow and Torch.
   Supported financial modelling using XGBoost and decision trees.
 
 
-\end{minipage}\hspace{0.04\textwidth}
-\begin{minipage}[t]{0.55\textwidth}
-  \section*{\LARGE EXPERIENCE}
-
-  \subsection*{Software Developer}
-  \emph{Two Sigma Securities}\hfill08/17---
-  \smallskip
-
-  \begin{itemize}
-    \item Rebuilt key research infrastructure with focus on reliability and performance.
-    \item Maintained a distributed trading system.
-    \item Led construction of a novel data framework to process trading events and market data.
-  \end{itemize}
-
-  \medskip
-  \subsection*{Software Intern}
-  \emph{Two Sigma}\hfill 06/16--08/16
-  \smallskip
-
-  Developed financial software to improve modeller productivity.
-
-  \medskip
-  \subsection*{Foundry Intern}
-  \emph{Microsoft}\hfill 06/15--08/15
-  \smallskip
-
-  Full-stack development on a variety of technologies and interfacing with Microsoft APIs.
-
-  \medskip
-  \subsection*{R\&D Software Intern}
-  \emph{Bloomberg}\hfill 06/14--08/14
-  \smallskip
-
-  Researched and developed natural language processing algorithms to automate live text analysis and question answering in C++ and Python.
-
-  \bigskip
-  \section*{\LARGE PROJECTS}
-  \emph{see github.com/clementlee for more details.}
-  \medskip
-  
-  \medskip
-  \subsection*{Self-Optimizing Networks}
-  \emph{Senior Thesis, Princeton}
-  \smallskip
-
-  Researched dynamic sizing algorithms to optimize learning capacity against overfitting in deep neural networks.
-
-  \medskip
-  \subsection*{Machine Learning Seminar}
-  \emph{Junior Independent Work}
-  \smallskip
-
-  Examined different techniques of pruning large-scale neural networks without sacrificing accuracy.
-  
-
-  
-\end{minipage}
 \end{document}
